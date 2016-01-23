@@ -11,7 +11,7 @@ import threading
 
 
 gpio = webiopi.GPIO
-PWR_RLY          = 6,7 # GPIO Chan used for power
+PWR_RLY          = 7 # GPIO Chan used for power
 DATA_RLY         = 8 # GPIO Chan used for data
 gpio8period      = 20 # period of 1 bit to achieve 45bps
 

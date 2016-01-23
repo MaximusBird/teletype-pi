@@ -19,7 +19,7 @@ MotorTimerVal         = 2 # seconds for motor to stay on after last character
 MotorTimerCtr         = 0 # counts down for motor
 MotorTimerThread      = None # motor timer taken care of on a separate thread
 ColumnCurrentPosition = 1
-ColumnMax             = 72
+ColumnMax             = 68 # 72 good for letter paper (USA), 68 goes well for DIN A4 paper
  
 # first we map ascii to the possible ascii chars
 ascii_to_baudot_char = {
@@ -98,6 +98,7 @@ ascii_to_baudot_char = {
   ',': ',',
   '\'': '\'',
   '/': '/',
+  '+': '+',
   '"': '"',
   ' ': ' ' 
 }
@@ -134,7 +135,7 @@ ascii_to_binstr = {
   '1'  : '10111',
   '2'  : '10011',
   '3'  : '00001',
-  '4'  : '01011',
+  '4'  : '01010',
   '5'  : '10000',
   '6'  : '10101',
   '7'  : '00111',
@@ -152,6 +153,7 @@ ascii_to_binstr = {
   ')'  : '10010',
   '.'  : '11100',
   ','  : '01100',
+  '+'  : '10001',
   '\'' : '01010',
   '/'  : '11101',
   '"'  : '11101',

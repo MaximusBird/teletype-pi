@@ -14,7 +14,7 @@ import teletype
 GPIO = webiopi.GPIO # Retrieve GPIO lib
 
 # these are the particular GPIO Pins we used. 
-PWR_RLY=6,7  # runs an opto-isolated relay which toggles power
+PWR_RLY=7  # runs an opto-isolated relay which toggles power
 DATA_RLY=8 # runs an opto-isolated N-Channel mosfet which toggles relay
 
 # empiracally-determined delay factor for teletype's bit rate
